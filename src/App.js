@@ -5,6 +5,7 @@ import ToastNotification from './components/ToastNotification';
 import { ModalComp } from './components/Modal';
 import ToolTip from './components/ToolTip';
 import CountUpComp from './components/CountUpComp';
+import IdleTimerContainer from './components/IdleTimerContainer';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <ToastNotification />
         <ModalComp />
         <ToolTip />
-        <CountUpComp />
+        {/* <CountUpComp /> */}
+        {/* <IdleTimerContainer /> */}
       </div>
   );
 }
