@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { Icons } from './components/Icons';
+import ToastNotification from './components/ToastNotification';
+import { ModalComp } from './components/Modal';
+import ToolTip from './components/ToolTip';
+import CountUpComp from './components/CountUpComp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Icons />
+        <ToastNotification />
+        <ModalComp />
+        <ToolTip />
+        <CountUpComp />
+      </div>
   );
 }
 
