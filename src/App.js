@@ -11,7 +11,9 @@ import CreditCards from './components/CreditCards';
 import DatePickerComp from './components/DatePicker';
 import VideoPlayer from './components/VideoPlayer';
 import { SpinnersLoaders } from './components/Spinners-Loaders';
-import LineChart, { Data, Options } from './components/charts/LineChart';
+import LineChart from './components/charts/LineChart';
+import BarChart from './components/charts/BarChart';
+import DoughnutChart from './components/charts/DoughnutChart';
 
 function App() {
   return (
@@ -21,16 +23,17 @@ function App() {
         <ToastNotification />
         <ModalComp />
         <ToolTip />
-        {/* <CountUpComp /> */}
-        {/* <IdleTimerContainer /> */}
+        <CountUpComp />
+        <IdleTimerContainer />
         <ColorPiker />
         <CreditCards />
-        {/* <VideoPlayer /> */}
+        <VideoPlayer />
         <SpinnersLoaders />
-        <LineChart>
-          <Options />
-          <Data />
-        </LineChart>
+        <div className='chart'>
+          <LineChart />
+          <BarChart />
+          <DoughnutChart />
+        </div>
       </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useRef, useState, Component } from "react";
-import {useIdleTimer} from "react-idle-timer";
+import { useIdleTimer } from "react-idle-timer";
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -29,7 +29,7 @@ function IdleTimerContainer() {
     console.log("User is Active");
   };
 
-  const IdelTimerN = useIdleTimer({onIdle, stayActive})
+  const IdelTimerN = useIdleTimer({ onIdle, stayActive });
 
   return (
     <div>
